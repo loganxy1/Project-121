@@ -1,0 +1,227 @@
+<html>
+    <head>
+        <title>Project 120</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+            <div class="heading">
+                <h3 id="header">Comparison to see which one is better...</h3>
+                <h1>Googlenet vs. Mobilenet</h1>
+                <h4>The Finale</h4>
+            </div>
+            <ol>
+                <div>
+                    <img width="250" height="250" src="https://play-lh.googleusercontent.com/G5oF0mhpOcQzFTrU6TDUL0JoAjzRt38weiZKua7L61WVT1z3dPcE9gUu-W2EwtM9cZU">
+                    <img id="vs" width="150" height="150"src="https://media.gettyimages.com/vectors/cartoon-boxing-gloves-vector-id148771691">
+                    <img width="250" height="250" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFNXEsoZVuWcY3KqTWdqkODO0HnQAIVXu4ag&usqp=CAU">
+                </div>
+                <div class="image_result col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        <br>
+                        <img height="250" width="250" id="img" src="uno_reverse_card.jpg">
+                    </li>
+                    <h5 id="google_lens" class="col-sm-4 col-xs-12">
+                        Google Lens result - 
+                        <span>UNO reverse card</span>
+                    </h5>
+
+                    <h5 id="mobilenet" class="col-sm-4 col-xs-12">
+                        Mobilenet result - 
+                        <span>Notebook, Notebook Computer</span>
+                    </h5>
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Google Lens</h4>
+                </div>
+
+
+
+                <div class="image_result col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        <br>
+                        <img height="250" width="250" id="img" src="expo_marker.jpg">
+                    </li>
+                    <h5 id="google_lens" class="col-sm-4 col-xs-12">
+                        Google Lens result - 
+                        <span>EXPO Low Odor Dry Erase Marker</span>
+                    </h5>
+
+                    <h5 id="mobilenet" class="col-sm-4 col-xs-12">
+                        Mobilenet result - 
+                        <span>Microphone, Mike</span>
+                    </h5>
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Google Lens</h4>
+                </div>
+
+
+                <div class="image_result col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        <br>
+                        <img height="250" width="250" id="img" src="scissor.jpg">
+                    </li>
+                    <h5 id="google_lens" class="col-sm-4 col-xs-12">
+                        Google Lens result - 
+                        <span>Staneless Steel Craft Snip Scissors</span>
+                    </h5>
+
+                    <h5 id="mobilenet" class="col-sm-4 col-xs-12">
+                        Mobilenet result - 
+                        <span>Screwdriver</span>
+                    </h5>
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Google Lens</h4>
+                </div>
+
+
+                <div class="image_result col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        <br>
+                        <img height="250" width="250" id="img" src="tissue_box.jpg">
+                    </li>
+                    <h5 id="google_lens" class="col-sm-4 col-xs-12">
+                        Google Lens result - 
+                        <span>Leenex Ultra Soft & Strong Facial Tissues</span>
+                    </h5>
+
+                    <h5 id="mobilenet" class="col-sm-4 col-xs-12">
+                        Mobilenet result - 
+                        <span>Candle</span>
+                    </h5>
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Google Lens</h4>
+                </div>
+
+
+                <div class="image_result col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        <br>
+                        <img height="250" width="250" id="img" src="binoculars.jpg">
+                    </li>
+                    <h5 id="google_lens" class="col-sm-4 col-xs-12">
+                        Google Lens result - 
+                        <span>THE LONDON EYE Mini Kids Binoculars</span>
+                    </h5>
+
+                    <h5 id="mobilenet" class="col-sm-4 col-xs-12">
+                        Mobilenet result - 
+                        <span>Microphone, Mike</span>
+                    </h5>
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Google Lens</h4>
+                </div>
+
+
+                <div class="image_result col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        <br>
+                        <img height="250" width="250" id="img" src="brainflake.jpg">
+                    </li>
+                    <h5 id="google_lens" class="col-sm-4 col-xs-12">
+                        Google Lens result - 
+                        <span>200pcs Interlocking Blocks Set Education</span>
+                    </h5>
+
+                    <h5 id="mobilenet" class="col-sm-4 col-xs-12">
+                        Mobilenet result - 
+                        <span>Jigsaw Puzzle</span>
+                    </h5>
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Google Lens</h4>
+                </div>
+
+
+                <div class="image_result col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        <br>
+                        <img height="250" width="250" id="img" src="book.jpg">
+                    </li>
+                    <h5 id="google_lens" class="col-sm-4 col-xs-12">
+                        Google Lens result - 
+                        <span>Dog Man Mothering Heights by Dav Pikely</span>
+                    </h5>
+
+                    <h5 id="mobilenet" class="col-sm-4 col-xs-12">
+                        Mobilenet result - 
+                        <span>Packet</span>
+                    </h5>
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Google Lens</h4>
+                </div>
+
+
+                <div class="image_result col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        <br>
+                        <img height="250" width="250" id="img" src="pokemon.jpg">
+                    </li>
+                    <h5 id="google_lens" class="col-sm-4 col-xs-12">
+                        Google Lens result - 
+                        <span>2013 Pokemon MBeedril EX XY Promos</span>
+                    </h5>
+
+                    <h5 id="mobilenet" class="col-sm-4 col-xs-12">
+                        Mobilenet result - 
+                        <span>Wallet</span>
+                    </h5>
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Google Lens</h4>
+                </div>
+
+
+                <div class="image_result col-xs-12">
+                    <li class="col-sm-4 col-xs-12">
+                        <b>Test Image - </b>
+                        <br>
+                        <img height="250" width="250" id="img" src="pencil.jpg">
+                    </li>
+                    <h5 id="google_lens" class="col-sm-4 col-xs-12">
+                        Google Lens result - 
+                        <span>DX75 Penil Triconderoga</span>
+                    </h5>
+
+                    <h5 id="mobilenet" class="col-sm-4 col-xs-12">
+                        Mobilenet result - 
+                        <span>Syringe</span>
+                    </h5>
+                    <h4>Result - </h4>
+                    <hr>
+                    <h4>Google Lens</h4>
+                </div>
+
+                <div class="col-sm-4 col-xs-12" id="conclude">
+                    <h2>Conclusion</h2>
+                    <br>
+                    <h4>
+                        I have 10 test images.
+                        Google Lens guessed all objects right, on  point. When MobileNet gussed none right. 
+                        According to my case study, Google Lens is more accurate
+                    </h4>
+                </div>
+            </ol>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
