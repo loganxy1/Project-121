@@ -1,0 +1,31 @@
+body{
+    background-color: lightblue;
+}
+
+#header{
+    margin-top: 0;
+    position: sticky;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+#vs{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.image_result{
+    background-color: #b520ba;
+    margin-top:75px;
+    color:cyan;
+    width: 1250px;
+    height:300px;
+    font-size: 20px;
+    margin-left: 200px;
+    border-radius: 35px;
+}
+
+#conclude{
+    margin-top: 50px;
+    margin-left: 500px;
+}
